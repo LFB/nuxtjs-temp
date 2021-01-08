@@ -5,7 +5,7 @@
         {{article.title}}
       </h1>
       <div> {{article.created_at}}</div>
-      <div>
+      <div class="content">
        {{article.content}}
       </div>
     </div>
@@ -45,19 +45,11 @@
   }
 
   .title {
-    font-family: 'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-    display: block;
-    font-weight: 300;
-    font-size: 100px;
-    color: #35495e;
-    letter-spacing: 1px;
+    margin: 16px 0;
+  }
+
+  .content {
+    padding: 16px;
+    line-height: 32px;
   }
 </style>
