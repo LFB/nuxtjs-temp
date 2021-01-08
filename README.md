@@ -1,20 +1,17 @@
 # nuxtjs-temp
 
-## Build Setup
+## 启动项目
 
 ```bash
-# install dependencies
+# 首先安装包
 $ npm install
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
+# 然后构建server服务
 $ npm run build
-$ npm run start
 
-# generate static project
-$ npm run generate
+
+# 启动项目
+npm run dev
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
