@@ -1,12 +1,12 @@
 <template>
-  <div class="container">
+  <div class="container" v-if="article">
     <div>
       <h1 class="title">
         {{article.title}}
       </h1>
       <div> {{article.created_at}}</div>
       <div class="content">
-       {{article.content}}
+        {{article.content}}
       </div>
     </div>
   </div>
@@ -18,19 +18,24 @@
   export default {
     async asyncData(context) {
       const {query} = context
-      const {id} = query
+       const {id} = query
       const article = await detail(id)
 
       return {
+        id,
         article: article.data
       }
     },
     data() {
       return {
+        id: -1,
         article: null
       }
     },
-    methods: {}
+    mounted() {
+    },
+    methods: {
+    }
   }
 </script>
 
